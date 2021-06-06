@@ -1,9 +1,10 @@
-//messages
+//messages array, messages will be objects
+const messeges = [{name: '', quote:''},{name: '', quote: ''},];
 
-//mixed messages for mixed button display 3 at a time
-
-
-//real messages for true button display 3 at a time
+const randomMessage = array => Math.floor(Math.random()*array.length)
 
 //root div to display messages
 
+const display = document.getElementById('root');
+const button = document.getElementById('true');
+button.addEventListener('click', function(){display.innerHTML = randomMessage})
